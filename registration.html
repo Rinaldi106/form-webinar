@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <title>Pendaftaran Webinar</title>
+  </head>
+
+  <style>
+    label {
+      font-weight: bold;
+    }
+    body {
+      background-image: url(background.jpg);
+    }
+    .container {
+      margin-bottom: 15px;
+    }
+  </style>
+
+  <body>
+    <div style="background-color: #fff; border-radius: 10px" class="container text-center">
+      <img src="img/kominfo.png" alt="logo" width="135px" />
+      <img src="img/logo.png" alt="logo" width="100px" />
+      <img src="img/bakti.png" alt="logo" width="130px" />
+      <img src="img/ikp.png" alt="logo" width="100px" />
+    </div>
+
+    <div style="background-color: #fff; border-radius: 10px" class="container p-3 ny-3 border">
+      <h1 class="text-center">FORMULIR PENDAFTARAN WEBINAR</h1>
+      <form action="koneksi.php" method="POST">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Kode Akses:</label>
+              <input type="text" name="kode_akses" class="form-control" placeholder="Masukkan Kode Akses" required />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Tanggal Kegiatan :</label>
+              <input type="date" name="tanggal_kegiatan" class="form-control" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-dark" role="alert">
+          <center><strong>BIODATA</strong></center>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Nama Lengkap:</label>
+              <input type="text" name="nama_lengkap" class="form-control" placeholder="Masukkan Nama Lengkap Anda" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nomor Whatsapp:</label>
+              <input type="text" name="nomor_wa" class="form-control" placeholder="Masukkan Nomor Whatsapp Anda" required />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="text" name="email" class="form-control" placeholder="Masukkan Alamat Email Anda" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Nomor Rekening</label>
+              <input type="text" name="norek" class="form-control" placeholder="Masukkan Nomor Rekening Anda" required />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Bank:</label>
+              <select class="form-control" name="bank" required>
+                <option value="">Pilih</option>
+                <option value="bca">BCA</option>
+                <option value="bni">BNI</option>
+                <option value="bri">BRI</option>
+                <option value="bsi">BSI</option>
+                <option value="bangjago">BANK JAGO</option>
+                <option value="cimbniaga">CIMB NIAGA</option>
+                <option value="mandiri">MANDIRI</option>
+                <option value="dana">DANA</option>
+                <option value="gopay">GOPAY</option>
+                <option value="ovo">OVO</option>
+                <option value="linkaja">LINKAJA</option>
+                <option value="shopeepay">SHOPEEPAY</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Usia:</label>
+              <input type="text" name="usia" class="form-control" placeholder="Masukkan Usia Anda" required />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Jenis Kelamin:</label>
+              <select class="form-control" name="jenis_kelamin" required>
+                <option value="">Pilih</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Pendidikan:</label>
+              <select class="form-control" name="pendidikan" required>
+                <option value="">Pilih</option>
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma/k">SMA/K</option>
+                <option value="diploma">DIPLOMA</option>
+                <option value="sarjana">SARJANA</option>
+                <option value="pendidikan_lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Status:</label>
+              <select class="form-control" name="status" required>
+                <option value="">Pilih</option>
+                <option value="pelajar">PELAJAR</option>
+                <option value="irt">IBU RUMAH TANGGA</option>
+                <option value="pegawai_negeri">PEGAWAI NEGERI</option>
+                <option value="pegawai_swasta">PEGAWAI SWASTA</option>
+                <option value="status_lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-dark" role="alert">
+          <center><strong>ALAMAT</strong></center>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label>Alamat Rumah:</label>
+              <textarea class="form-control" name="alamat_rumah" rows="2" id="alamat" placeholder="Masukkan Alamat Anda" required></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Kecamatan:</label>
+              <input type="text" name="kecamatan" class="form-control" placeholder="Masukkan Kecamatan" required />
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Kabupaten/Kota:</label>
+              <input type="text" name="kab/kota" class="form-control" placeholder="Masukkan Kabupaten/Kota" required />
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div the="form-group">
+              <label>Provinsi:</label>
+              <input type="text" name="provinsi" class="form-control" placeholder="Masukkan Provinsi" required />
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Kode Pos:</label>
+              <input type="text" name="kode_pos" class="form-control" placeholder="Masukkan Kode Pos" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          <strong>
+            <input type="checkbox" name="checkbox-1" value="checkbox-1" required onchange="checkCheckboxes();" />
+            Saya menyatakan bahwa data yang di isikan benar.
+            <br />
+            <input type="checkbox" name="checkbox-2" value="checkbox-2" required onchange="checkCheckboxes();" />
+            Saya siap mengikuti tata tertib webinar.
+          </strong>
+        </div>
+        <script>
+          function checkCheckboxes() {
+            var checkbox1 = document.getElementsByName('checkbox-1')[0];
+            var checkbox2 = document.getElementsByName('checkbox-2')[0];
+            var submitButton = document.getElementsByName('daftar')[0];
+            submitButton.disabled = !checkbox1.checked || !checkbox2.checked;
+          }
+        </script>
+
+        <center>
+          <button type="submit" name="daftar" class="btn btn-primary" value="Daftar">Daftar</button>
+        </center>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
